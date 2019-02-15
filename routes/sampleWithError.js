@@ -6,7 +6,7 @@ module.exports = function(fastify) {
       try {
         throw Error("Testing");
       } catch (e) {
-        res.send({ message: e.message });
+        res.code(500).send({ message: e.message });
       }
     }
   };
