@@ -1,0 +1,11 @@
+{
+  "name": "muse-fastify-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:mansarip/muse-fastify-starter.git",
+  "author": "Luqman <luqmanrasa@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^1.14.1"
+  }
+}
