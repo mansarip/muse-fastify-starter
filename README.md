@@ -10,9 +10,11 @@ Ini adalah starter template atau source code yang dicipta khas untuk handle back
 ### Langkah Mula
 
 Clone repo ini:
+
 `$ git clone git@github.com:mansarip/muse-fastify-starter.git`
 
 Masuk ke dalam folder yang baru di-clone tadi
+
 `$ cd muse-fastify-server`
 
 ### Development
