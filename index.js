@@ -1,5 +1,4 @@
 const fastify = require("fastify")();
-const { PORT } = process.env;
 
 // sample routes
 fastify.route(require("./routes/sample")(fastify));
@@ -9,6 +8,10 @@ fastify.route(require("./routes/sampleWithError")(fastify));
 async function start(PORT = 3001) {
   try {
     await fastify.listen(PORT);
+
+    if (process.env.NODE_ENV === "development") {
+      console.log(`Server development running at ${process.env.PORT}`);
+    }
   } catch (err) {
     fastify.log.error(err);
     process.exit(1);
@@ -16,4 +19,4 @@ async function start(PORT = 3001) {
 }
 
 // start server
-start();
+start(process.env.PORT);

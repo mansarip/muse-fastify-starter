@@ -1,0 +1,8 @@
+{
+  "name": "Sample Server",
+  "script": "index.js",
+  "env": {
+    "NODE_ENV": "production",
+    "PORT": 6001
+  }
+}
